@@ -1,0 +1,49 @@
+<layout-row id="RowLayout1">
+	<stacked-view id="stackedview1" value="0">
+		<stacked-pane id="stackedpane1" value="0">
+			<davinci-button id="Button1" type="primary">
+				<span>RUN</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="stackedpane2" value="1">
+			<davinci-button id="Button2" type="primary">
+				<span>OPERATOR</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane3" value="2">
+			<davinci-button id="Button5" type="primary">
+				<span>MAINTENANCE</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane2" value="3">
+			<davinci-button id="Button4" type="primary">
+				<span>AUTHORIZEDCLIENT</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane1" value="4">
+			<davinci-button id="Button3" type="primary">
+				<span>SERVICE</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane6" value="5">
+			<davinci-button id="Button8" type="primary">
+				<span>SICKSERVICE</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane5" value="6">
+			<davinci-button id="Button7" type="primary">
+				<span>PRODUCTION</span>
+			</davinci-button>
+		</stacked-pane>
+		<stacked-pane id="StackedPane4" value="7">
+			<davinci-button id="Button6" type="primary">
+				<span>DEVELOPER</span>
+			</davinci-button>
+		</stacked-pane>
+		<local-binding property="value" name="currentuser" converter="getUserId"></local-binding>
+	</stacked-view>
+	<davinci-button id="Button9" type="primary">
+		<span>Active when user >= Operator</span>
+		<local-binding property="disabled" name="currentuser" converter="getDisabled"></local-binding>
+	</davinci-button>
+</layout-row>

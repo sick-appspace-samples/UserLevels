@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="UserLevels">
+        <crown name="UserLevels">
+            <desc>user script</desc>
+            <serves/>
+        </crown>
+        <meta key="author">AppSpaceSample</meta>
+        <meta key="version">1.0</meta>
+        <meta key="priority">low</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+    </application>
+</manifest>
