@@ -7,7 +7,7 @@ export function getUserId(value) {
 // Referenced in binding to disable Button when user lower as operator
 export function getDisabled(value) {
   let disabled = true
-  if (value.id > 1){
+  if (value.id >= 1){
     disabled = false
   }
   return disabled;
